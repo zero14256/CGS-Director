@@ -48,6 +48,8 @@ ComfyUI/custom_nodes/CGS-Director/
 
 ## 三、快速上手
 
+![CGS-导演台 界面总览（素材池 / T2VA 编辑区 / 台词与模板标签 / 参考引用）](screenshot_ui.png)
+
 1. 菜单「工作流」→「打开」选择 `CGS-Director/examples/CGS-导演台-示例工作流.json`。
 2. 在 UNETLoader / CLIPLoader / 两个 VAELoader 中选择你已下载的 H3 模型文件名（示例默认值见下文）。
 3. 在 CGS-导演台·核心 的 prompt 输入文案，或点击节点上的「可视化时间线」增删镜头。
