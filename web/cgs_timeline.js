@@ -1,4 +1,13 @@
-﻿import { app } from "../../scripts/app.js";
+/* ============================================================
+ * CGS-导演台 (CGS-Director) · ComfyUI MiniMax H3 导演工作台
+ * Author: zero14256
+ * Repo:   https://github.com/zero14256/comfyui-MinimaxH3-CGS-Director
+ * License: MIT · 请保留此来源标识
+ * ============================================================
+ */
+
+
+import { app } from "../../scripts/app.js";
 
 const MODES = ["T2VA文生音视频", "FL2VA首尾帧", "Ref2VA参考生成", "全能参考"];
 const CAMERAS = [

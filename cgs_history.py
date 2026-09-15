@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+# ============================================================
+# CGS-导演台 (CGS-Director) · ComfyUI MiniMax H3 导演工作台
+# Author: zero14256
+# Repo:   https://github.com/zero14256/comfyui-MinimaxH3-CGS-Director
+# License: MIT · 请保留此来源标识
+# ============================================================
+
 """
 CGS-Director 生成历史记录后端（独立新增，不改动 cgs_director_core.py / cgs_timeline.js）
 
@@ -120,6 +127,7 @@ async def cgs_history_save(request):
 
     entry["images"] = thumbs
     entry["src_images"] = [im.get("filename") for im in images if im.get("filename")]
+    entry["_source"] = "CGS-Director by zero14256 | https://github.com/zero14256/comfyui-MinimaxH3-CGS-Director"
     try:
         with open(os.path.join(base, eid + ".json"), "w", encoding="utf-8") as f:
             json.dump(entry, f, ensure_ascii=False, indent=2)

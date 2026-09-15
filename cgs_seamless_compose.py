@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+# ============================================================
+# CGS-导演台 (CGS-Director) · ComfyUI MiniMax H3 导演工作台
+# Author: zero14256
+# Repo:   https://github.com/zero14256/comfyui-MinimaxH3-CGS-Director
+# License: MIT · 请保留此来源标识
+# ============================================================
+
 """
 CGS-SeamlessCompose 成片合成节点
 输入：过渡段解码帧(VAEDecode输出) + CGS导演台的 shots_json(含 seamless 时间轴 + 素材池)

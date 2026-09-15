@@ -1,3 +1,10 @@
+# ============================================================
+# CGS-导演台 (CGS-Director) · ComfyUI MiniMax H3 导演工作台
+# Author: zero14256
+# Repo:   https://github.com/zero14256/comfyui-MinimaxH3-CGS-Director
+# License: MIT · 请保留此来源标识
+# ============================================================
+
 RESOLUTION_PRESETS = {
     "1080P 横屏 16:9": (1920, 1080),
     "2K 横屏 16:9": (2048, 1152),

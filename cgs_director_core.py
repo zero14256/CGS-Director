@@ -1,4 +1,11 @@
-﻿import gc
+# ============================================================
+# CGS-导演台 (CGS-Director) · ComfyUI MiniMax H3 导演工作台
+# Author: zero14256
+# Repo:   https://github.com/zero14256/comfyui-MinimaxH3-CGS-Director
+# License: MIT · 请保留此来源标识
+# ============================================================
+
+import gc
 import json
 import re
 import cv2
@@ -14,6 +21,8 @@ from comfy_extras.nodes_minimax_h3 import (
 )
 
 from . import cgs_presets as P
+
+_AUTHOR_SIG = "CGS-DIRECTOR|ZERO14256|2026|MIT|9f2a1b7c"
 
 MODE_ALIAS = {
     "text": "T2VA文生音视频", "t2v": "T2VA文生音视频",
@@ -696,5 +705,6 @@ class CGSDirectorCore:
         sampler_params = json.dumps({"seed": _sampler_seed, "steps": 25, "cfg": 1.0, "sampler_name": "euler", "scheduler": "karras", "shift_video": 12.0, "shift_audio": 8.0})
         report_lines.append("总计: %d 个启用镜头, %d 帧, 约 %.1fs" % (
             len(active), total_frames, total_frames / P.FPS))
+        report_lines.append("CGS-Director by zero14256 | https://github.com/zero14256/comfyui-MinimaxH3-CGS-Director")
         return (model, last_positive, last_negative, last_latent, sampler_params, w, h, total_frames, "\n".join(report_lines), shots_json)
 
